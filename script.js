@@ -19,7 +19,7 @@ const ohkay2 = () => {
   document.getElementById("turner").textContent = "Plese enter the number !";
 };
 const checking = () => {
-  let newGuess = Math.floor(Math.random() * 1 + 1);
+  let newGuess = Math.floor(Math.random() * 5 + 1);
   // for (let i = 0; i < nameArray.length; i++) {
   //   points.push(0);
   // }
