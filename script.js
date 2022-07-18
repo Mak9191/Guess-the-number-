@@ -1,6 +1,6 @@
 "use strict";
-var nameArray = new Array();
-var colorobj = {
+let nameArray = new Array();
+let colorobj = {
   Blue: "#68BBE5",
   Green: "#41b853",
   Pink: "#df4c73",
@@ -8,9 +8,9 @@ var colorobj = {
   Yellow: "#8f951d",
   PaleRose: "#f58f7c",
 };
-var total = 0;
-var number = 0;
-var points = new Array();
+let total = 0;
+let number = 0;
+let points = new Array();
 const refresh = () => {
   location.reload();
 };
@@ -155,7 +155,7 @@ const ohkaying = () => {
   // console.log("It is working");
   document.querySelector(".upshow").classList.add("unshow");
 };
-var go;
+let go;
 const going = () => {
   go = document.getElementById("numPlayer").value;
   if (Number(go) <= 0 || go === "" || Number(go) > 5) {
@@ -168,7 +168,7 @@ const going = () => {
   }
 };
 // console.log(going);
-var colorarray = new Array();
+let colorarray = new Array();
 let countFillingArray = 0;
 const fillingArray = () => {
   let playerName = document.getElementById("playername").value;
@@ -206,44 +206,44 @@ const fillingArray = () => {
     let c1 = colorarray[0];
     let c = colorobj[c1];
     document.body.style.backgroundColor = c;
-    var tableform = document.getElementById("formingtable");
-    // var tbl = document.createElement("table");
+    let tableform = document.getElementById("formingtable");
+    // let tbl = document.createElement("table");
 
-    var tbl = document.getElementById("formedtable");
-    var tblBody = document.createElement("tbody");
+    let tbl = document.getElementById("formedtable");
+    let tblBody = document.createElement("tbody");
     console.log("the length of the array " + nameArray.length);
-    var row = document.createElement("th");
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode("Player Name ");
+    let row = document.createElement("th");
+    let cell = document.createElement("td");
+    let cellText = document.createTextNode("Player Name ");
     cell.appendChild(cellText);
     row.appendChild(cell);
     tblBody.appendChild(row);
-    var row = document.createElement("th");
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode("Score");
+    row = document.createElement("th");
+    cell = document.createElement("td");
+    cellText = document.createTextNode("Score");
     cell.appendChild(cellText);
     row.appendChild(cell);
     tblBody.appendChild(row);
-    var row = document.createElement("th");
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode("Player Color ");
+    row = document.createElement("th");
+    cell = document.createElement("td");
+    cellText = document.createTextNode("Player Color ");
     cell.appendChild(cellText);
     row.appendChild(cell);
     tblBody.appendChild(row);
-    for (var i = 0; i < nameArray.length; i++) {
+    for (let i = 0; i < nameArray.length; i++) {
       // creates a table row
       console.log("for loop is working");
-      var row = document.createElement("tr");
-      var cell = document.createElement("td");
-      var cellText = document.createTextNode(nameArray[i]);
+      let row = document.createElement("tr");
+      cell = document.createElement("td");
+      cellText = document.createTextNode(nameArray[i]);
       cell.appendChild(cellText);
       row.appendChild(cell);
-      var cell = document.createElement("td");
-      var cellText = document.createTextNode("0");
+      cell = document.createElement("td");
+      cellText = document.createTextNode("0");
       cell.appendChild(cellText);
       row.appendChild(cell);
-      var cell = document.createElement("td");
-      var cellText = document.createTextNode(colorarray[i]);
+      cell = document.createElement("td");
+      cellText = document.createTextNode(colorarray[i]);
       cell.appendChild(cellText);
       row.appendChild(cell);
       tblBody.appendChild(row);
