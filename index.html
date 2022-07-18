@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 5)</p>
+      <button  id="btn1" class="btn again" onclick="refresh()">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <section id="winner" class="upshow unshow">
+      <p id="winpage"></p>
+      <p id="scoreshowing1" class = "winnershowing"></p>
+      <p id="scoreshowing2" class="winnershowing "></p>
+      <p id="scoreshowing3"  class="winnershowing "></p>
+      <p id="scoreshowing4"  class="winnershowing "></p>
+      <p id="scoreshowing5" class="winnershowing "></p>
+      <button type="reset" id="btn1" class="btnturner" onclick="refresh()">Again!</button>
+    </section>
+    <section id="turnerpage" class="upshow unshow">
+      <p id="turner"></p>
+      <button class="btnturner" onclick="ohkay2()">Ohkay</button>
+    </section>
+    <main>
+      <section id="formingtable">
+        <table id="formedtable"></table>
+      </section>
+      <section class="left">
+        <p id="guessing">Guess the number</p>
+        <input id="checkinput"type="number" class="guess" />
+        <button id= "check"class="btn check" onclick="checking()">Check!</button>
+      </section>
+    </main>
+    <section id="nonumber" class="unshow upshow">
+      <div>
+        <p id="uppara1" class="uppara">Please Enter the number</p>
+      </div>
+      <div>
+        <button class="btn ohkay" onclick="ohkaying()">OK</button>
+      </div>
+    </section>
+    <section id="playerPage" class="upshow">
+      <p style="color: white;" class="uppara">How Many Players do you want to play (1 - 5)</p>
+      <input id="numPlayer" type="number" class="guess guessmid" />
+      <button class="btn ohkay" onclick="going()">Go</button>
+    </section>
+    <section id="player_naming" class="upshow unshow">
+      <form action=""></form>
+      <p class="uppara">Enter the name of the player</p>
+      <input id="playername" type="text" class="guess guessmid" />
+      <div class="selectingcolor">
+        <p>Choose the color</p>
+        <div>
+            <input
+              type="radio"
+              name="fav_color"
+              id="playercolor1"
+              value="Blue";
+              class="playcolor"
+              checked = 
+              />
+              <!-- value="#68BBE5" -->
+            <label for="#" id="playcolor1" >Light Blue</label>
+            <!-- #68BBE5 -->
+            <input
+              type="radio"
+              name="fav_color"
+              id="playercolor2"
+              value="Green"
+              class="playcolor"
+              />
+              <!-- value="#c6fad2" -->
+            <label for="#" id="playcolor2">Light Green</label>
+            <input
+              type="radio"
+              name="fav_color"
+              id="playercolor3"
+              value="Pink"
+              class="playcolor"
+              />
+              <!-- value="#df4c73" -->
+            <label for="#" id="playcolor3">Red Pink</label
+            ><!-- #DF4C73 -->
+            <input
+              type="radio"
+              name="fav_color"
+              id="playercolor4"
+              value="Skin"
+              class="playcolor"
+              />
+              <!-- value="#f17a7e" -->
+            <label for="#" id="playcolor4">Skin</label>
+            <!-- #F17A7E -->
+            <input
+              type="radio"
+              name="fav_color"
+              value="Yellow"
+              id="playercolor5"
+              class="playcolor"
+              />
+              <!-- value = "#e1ea35" -->
+            <label for="#" id="playcolor5">Yellow</label>
+            <!-- #E1EA35 -->
+            <input
+              type="radio"
+              name="fav_color"
+              value="PaleRose"
+              id="playercolor6"
+              class="playcolor"
+            />
+            <label for="#" id="playcolor6">Pale Rose</label>
+          </form>
+        </div>
+      </div>
+      <button class="btn ohkay" onclick="fillingArray()">Next</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
