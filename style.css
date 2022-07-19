@@ -49,6 +49,7 @@ main {
 h1 {
   font-size: 4rem;
   text-align: center;
+  line-height: 25px;
   position: absolute;
   width: 100%;
   top: 52%;
@@ -159,6 +160,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin: 45px;
+  line-height: 25px;
 }
 #formingtable {
   color: white;
@@ -170,6 +172,13 @@ h1 {
 td {
   padding: 10px;
   margin: 5px;
+}
+#radiochoice {
+  padding: 15px;
+  margin: 15px 0;
+}
+#radiochoice input{
+  margin: 10px;
 }
 .playcolor {
   font-size: 2.5rem;
@@ -185,6 +194,7 @@ td {
 }
 .selectingcolor p {
   margin: 15px 27px;
+  font-size: 2.5rem;
 }
 .selectingcolor {
   display: flex;
@@ -220,11 +230,14 @@ input[type="radio"] {
   color: #f58f7c;
 }
 #guessing {
+  width: 100%;
   margin: 25px;
-  font-size: 2rem;
+  font-size: 3rem;  
+  padding: 5px;
 }
 #turner {
   font-size: 3.5rem;
+  line-height: 25px;
 }
 .btnturner {
   margin: 20px auto;
@@ -246,4 +259,46 @@ input[type="radio"] {
   font-size: 2.2rem;
   margin: 3px 0px;
   padding: 3px;
+}
+@media (max-width:866px) {
+  html {
+    font-size: 30.5%;
+    box-sizing: border-box;
+  }
+  
+  .selectingcolor{
+    flex-direction: column;
+  }
+  #formingtable {
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+  #formingtable tr {
+    padding: 5px;
+    font-size: 2.6 rem;
+  }
+  td {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 5px;
+  }
+  #colorcolumn{
+    display: none;
+  }
+  #maintwo{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap-reverse;
+  }
+ 
+}
+@media (max-width:350px) {
+  html {
+    font-size: 25.5%;
+    box-sizing: border-box;
+  }
+   #formingtable {
+    margin: 10px;
+  }
 }
