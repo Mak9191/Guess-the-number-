@@ -27,7 +27,7 @@
       <p id="turner"></p>
       <button class="btnturner" onclick="ohkay2()">Ohkay</button>
     </section>
-    <main>
+    <main id="maintwo">
       <section id="formingtable">
         <table id="formedtable"></table>
       </section>
@@ -56,28 +56,32 @@
       <input id="playername" type="text" class="guess guessmid" />
       <div class="selectingcolor">
         <p>Choose the color</p>
-        <div>
+        <div id="radiochoice">
+          <div>
             <input
-              type="radio"
-              name="fav_color"
-              id="playercolor1"
-              value="Blue";
-              class="playcolor"
-              checked = 
-              />
-              <!-- value="#68BBE5" -->
-            <label for="#" id="playcolor1" >Light Blue</label>
-            <!-- #68BBE5 -->
-            <input
-              type="radio"
-              name="fav_color"
-              id="playercolor2"
-              value="Green"
-              class="playcolor"
-              />
-              <!-- value="#c6fad2" -->
-            <label for="#" id="playcolor2">Light Green</label>
-            <input
+            type="radio"
+            name="fav_color"
+            id="playercolor1"
+            value="Blue";
+            class="playcolor"
+            checked 
+            />
+            <!-- value="#68BBE5" -->
+          <label for="#" id="playcolor1" >Blue</label>
+          <!-- #68BBE5 -->
+          <input
+            type="radio"
+            name="fav_color"
+            id="playercolor2"
+            value="Green"
+            class="playcolor"
+            />
+            <!-- value="#c6fad2" -->
+          <label for="#" id="playcolor2">Green</label>
+          </div>  
+      
+            <div>
+              <input
               type="radio"
               name="fav_color"
               id="playercolor3"
@@ -85,7 +89,7 @@
               class="playcolor"
               />
               <!-- value="#df4c73" -->
-            <label for="#" id="playcolor3">Red Pink</label
+            <label for="#" id="playcolor3">Pink</label
             ><!-- #DF4C73 -->
             <input
               type="radio"
@@ -96,8 +100,11 @@
               />
               <!-- value="#f17a7e" -->
             <label for="#" id="playcolor4">Skin</label>
+            </div>
+           
             <!-- #F17A7E -->
-            <input
+            <div>
+              <input
               type="radio"
               name="fav_color"
               value="Yellow"
@@ -107,14 +114,17 @@
               <!-- value = "#e1ea35" -->
             <label for="#" id="playcolor5">Yellow</label>
             <!-- #E1EA35 -->
-            <input
+              <input
               type="radio"
               name="fav_color"
               value="PaleRose"
               id="playercolor6"
               class="playcolor"
             />
-            <label for="#" id="playcolor6">Pale Rose</label>
+            <label for="#" id="playcolor6">Pale</label>
+           
+            </div>
+            
           </form>
         </div>
       </div>
