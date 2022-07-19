@@ -226,7 +226,8 @@ const fillingArray = () => {
     tblBody.appendChild(row);
     row = document.createElement("th");
     cell = document.createElement("td");
-    cellText = document.createTextNode("Player Color ");
+    cellText = document.createTextNode("Player Color ")
+    // cell.setAttribute('id' , 'colorcolumn');;
     cell.appendChild(cellText);
     row.appendChild(cell);
     tblBody.appendChild(row);
