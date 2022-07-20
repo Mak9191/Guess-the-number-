@@ -231,6 +231,7 @@ input[type="radio"] {
 }
 #guessing {
   width: 100%;
+  line-height: 25px;
   margin: 25px;
   font-size: 3rem;  
   padding: 5px;
@@ -253,6 +254,7 @@ input[type="radio"] {
 }
 #winpage {
   font-size: 3.5rem;
+  line-height: 35px;
   margin-bottom: 30px;
 }
 .winnershowing{
