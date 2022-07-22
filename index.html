@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 5)</p>
+      <p id="betweenplayers" class="between">(Between 1 and 5)</p>
       <button  id="btn1" class="btn again" onclick="refresh()">Again!</button>
       <div class="number">?</div>
     </header>
@@ -52,7 +52,7 @@
     </section>
     <section id="player_naming" class="upshow unshow">
       <form action=""></form>
-      <p class="uppara">Enter the name of the player</p>
+      <p class="uppara"id="play_number"></p>
       <input id="playername" type="text" class="guess guessmid" />
       <div class="selectingcolor">
         <p>Choose the color</p>
