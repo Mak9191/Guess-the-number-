@@ -33,10 +33,7 @@ let player_turn = 1;
 let guessdone = 0
 betweenplayers.textContent = `Player ${player_turn} turn || Guesses done :- ${guessdone}`;
 const checking = () => {
-  let newGuess = Math.floor(Math.random() * 1 + 1);
-  // for (let i = 0; i < nameArray.length; i++) {
-  //   points.push(0);
-  // }
+  let newGuess = Math.floor(Math.random() * 5 + 1);
   let num = document.getElementById("checkinput").value;
 
   document.querySelector(".number").textContent = newGuess;
@@ -44,7 +41,6 @@ const checking = () => {
     turner.textContent = "Plese enter the number!";
     turnerpage.classList.remove("unshow");
     return;
-    // document.getElementById("player_naming").classList.add("unshow");
   } else if (0 > Number(num) || Number(num) > 5) {
     turner.textContent =
       "Plese enter the number between 1 to  5";
@@ -52,7 +48,6 @@ const checking = () => {
     checkinput.value = "";
     return;
   }
-
   if (total < nameArray.length * 5) {
     let i = Math.trunc(total / 5);
     if (number <= 5) {
@@ -110,7 +105,6 @@ const checking = () => {
       }else{
         document.getElementById("winpage").innerHTML =
         number = `Congratulation ! Player ${index + 1} is winner `;
-       
       } 
       for (let i = 0 ;i < points.length ;i++){
         document.getElementById(`scoreshowing${i+1}`).innerHTML = `Player ${i+1} score is ${points[i]}`;
